@@ -9,5 +9,5 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
         self.wfile.write(b'Hello, world!')
 
 
-httpd = HTTPServer(('localhost', 8000), SimpleHTTPRequestHandler)
+httpd = HTTPServer(('localhost', 8080), SimpleHTTPRequestHandler)
 httpd.serve_forever()
